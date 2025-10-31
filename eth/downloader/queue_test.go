@@ -351,7 +351,6 @@ func XTestDelivery(t *testing.T) {
 			}
 		}
 	}()
-	wg.Add(1)
 	go func() {
 		defer wg.Done()
 		// reserve receiptfetch
